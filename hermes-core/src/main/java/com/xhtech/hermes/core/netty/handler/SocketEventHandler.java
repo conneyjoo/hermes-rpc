@@ -1,0 +1,12 @@
+package com.xhtech.hermes.core.netty.handler;
+
+import io.netty.channel.ChannelHandlerContext;
+
+public interface SocketEventHandler {
+
+    void accept(ChannelHandlerContext ctx);
+
+    void heartbeat(ChannelHandlerContext ctx);
+
+    void close(ChannelHandlerContext ctx);
+}
